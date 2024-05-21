@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b4ddff;
+}
+
+header {
+    background-color: #8fda2e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.issue-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+.entry:hover {
+    background-color: #f0f0f0;
+}
+
+.entry span {
+    margin-bottom: 5px;
+}
+
+.id {
+    font-weight: bold;
+    color: #333;
+}
+
+.name, .subject, .date, .time, .issue {
+    font-size: 14px;
+}
+
+.subject {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date, .time {
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}
+
+.issue {
+    margin-top: 10px;
+    color: #444;
+}
+.issue {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.hei-show {
+    max-height: 100px; 
+    overflow: scroll;
+}

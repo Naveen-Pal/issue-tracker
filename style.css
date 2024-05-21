@@ -1,0 +1,35 @@
+body{
+    background: #d0f7fc;
+    text-align: center;
+    align-items: center;
+}
+
+.form-container{
+    display: flex;
+    background-color: #cbdbe6;
+    border: 10px solid #fbff21 ;
+    border-radius: 10%;
+    flex-direction: column;
+    box-shadow: #cbdbe6 ;
+    padding: 10px;
+    margin: 5vh 15%;
+    width: 70%;
+}
+.form-header{
+    color: darkblue;
+
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    /* margin: 0; */
+    
+}
+input, textarea{
+    margin: 10px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10%;
+    font-size: 15px;
+}
