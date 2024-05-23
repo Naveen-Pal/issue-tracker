@@ -1,9 +1,5 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {   
-    $server = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "issues";
 
     $name = $_POST["username"];
     $number = $_POST["number"];
@@ -14,13 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $date = date('Y-m-d');
     $time = date('H:i:s');
 
-    // Create a connection
-    $con = mysqli_connect($server, $username, $password, $database);
-
-    // Check connection
-    if (!$con) {
-        die("Connection with database failed due to " . mysqli_connect_error());
-    }
+    require("mysqlconnection.php");
 
     // Escape user inputs for security
     $name = mysqli_real_escape_string($con, $name);
@@ -70,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                           <br>
                         </h1>
                         <div class='help'>
-                          <img width="252" src='https://media.istockphoto.com/id/842810474/vector/customer-design.jpg?s=612x612&w=0&k=20&c=FEi7m-2ip97MCA8u12BLUcHIzzPQi-5WuKgdE6SyQVE='>
+                          <img width="252" src='img.jpg'>
                         </div>
                         </div>
                     </td>

@@ -6,12 +6,16 @@ body {
 }
 
 header {
-    background-color: #8fda2e;
+    /* background-color: #8fda2e; */
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
-
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c54e4e;
+}
 main {
     padding: 20px;
 }

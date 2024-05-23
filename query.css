@@ -43,7 +43,7 @@ right:4px}
       #button:hover {
         background-color: #4fd9ff;
         box-shadow: 0 0 20px #6fc5ff50;
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
       
       #button:active {
