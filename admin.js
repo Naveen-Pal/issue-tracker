@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
         entry.addEventListener('click', () => {
             entry.querySelector('.issue').classList.toggle('hei-show');
+            entry.querySelector('.link').classList.toggle('hei-show');
             entry.querySelector('.email').classList.toggle('hei-show');
             entry.querySelector('.number').classList.toggle('hei-show');
         });

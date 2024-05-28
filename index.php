@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $subject = $_POST["subject"];
     $issue = $_POST["issue"];
+    $link = $_POST["link"];
     date_default_timezone_set("Asia/Calcutta");
     $date = date('Y-m-d');
     $time = date('H:i:s');
@@ -88,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <textarea name="issue" id="issue" rows="5" cols="50" placeholder="Explain Your Issue Briefly"></textarea>
                         <div id="file-container">
                             <h3>Upload an image</h3>
-                            <input type="link" name="img" placeholder="Image drive link">
+                            <input type="link" name="link" placeholder="Media link">
                         </div>
                         <input type="submit" id="button" value="Submit the Issue">
                     </form>

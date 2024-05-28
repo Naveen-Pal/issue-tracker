@@ -63,18 +63,18 @@ $result = $con->query($sql);
                             <span class=\"date val\">" . $date . "</span>
                             <span class=\"time\">" . $time . "</span>
                             <span class=\"issue\">" . $issue . "</span>
-                            <span class=\"link\"><a href=" . $link . ">link</a></span>
                             <span class=\"email\"><b>Email: </b>" . $email . "</span>
                             <span class=\"number\"><b>Contact no.: </b>" . $number . "</span>
 
                         </div>
                         <div class=\"sta in\">
-                            <span class=\"status\">" . $s_sta . "</span>
-                            <form method=\"post\">
-                                <input type=\"hidden\" name=\"issue_id\" value=\"" . $issue_id . "\">
-                                <input type=\"hidden\" name=\"current_status\" value=\"" . $status . "\">
-                                <button type=\"submit\" name=\"toggle_status\" class=\"ch-st\">" . $button_text . "</button>
-                            </form>
+                        <span class=\"status\">" . $s_sta . "</span>
+                        <form method=\"post\">
+                        <input type=\"hidden\" name=\"issue_id\" value=\"" . $issue_id . "\">
+                        <input type=\"hidden\" name=\"current_status\" value=\"" . $status . "\">
+                        <button type=\"submit\" name=\"toggle_status\" class=\"ch-st\">" . $button_text . "</button>
+                        </form>
+                        <span class=\"link\"><a href=" . $link . ">Media link</a></span>
                         </div>
                     </div>";
                 }

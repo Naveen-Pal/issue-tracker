@@ -78,9 +78,8 @@ main p{
     display: grid;
 }
 
-.email, .number{
+.email, .number, .link{
     max-height: 0;
-    /* display: inline; */
     overflow: hidden;
 }
 
